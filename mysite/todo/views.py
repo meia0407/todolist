@@ -1,7 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+<<<<<<< HEAD
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
+=======
+from django.views.generic import ListView
+>>>>>>> 04f7a03bae29b79cf4e1a17a3ab241a394bc02cb
 
 from .models import Todo
 
@@ -11,6 +15,7 @@ def index(request):
 
 class TodoList(ListView):
     model = Todo
+<<<<<<< HEAD
     context_object_name = "tasks"
     
 class TodoDetail(DetailView):
@@ -31,3 +36,6 @@ class TodoDelete(DeleteView):
     model = Todo
     context_object_name = "task"
     success_url = reverse_lazy("list")
+=======
+    context_object_name = "tasks"
+>>>>>>> 04f7a03bae29b79cf4e1a17a3ab241a394bc02cb

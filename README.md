@@ -12,14 +12,14 @@ Todo List of School
 
 # 使用技術
 
-・python 3.10.11  
+・Python 3.10.11  
 ・Django 4.2.3  
 ・HTML  
 ・CSS  
 ・Bootstrap 5.0.0  
 ・Git/GitHub  
 ・Visual Studio Code  
-・windows11 version22H2
+・Windows11 version22H2
 
 # 機能一覧
 

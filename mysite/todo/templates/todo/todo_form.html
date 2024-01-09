@@ -1,16 +1,16 @@
 {% extends 'todo/base.html' %}
 
-{% block header %}
-<h1>授業の登録・編集</h1>
-{% endblock header %}
-
 {% block content %}
-<form action="" method="POST">
-	{% csrf_token %}
-	<table class="table">
-		{{form.as_table}}
-	</table>
-	<a class="btn btn-outline-secondary" href="{% url 'list' %}" role="button">戻る</a>
-	<input class="btn btn-success" type="submit" value="送信">
-</form>
+<div class="form-all">
+	<form action="" method="POST">
+		{% csrf_token %}
+		<table class="form-table">
+			{{form.as_table}}
+		</table>
+		<div class="form-div">
+			<a class="normal-btn" href="{% url 'list' %}">戻る</a>
+			<input type="submit" value="送信" class="careful-btn">
+		</div>
+	</form>
+</div>
 {% endblock content %}

@@ -1,17 +1,15 @@
 {% extends 'todo/base.html' %}
 
-{% block header %}
-<h1>授業の詳細</h1>
-{% endblock header %}
-
 {% block content %}
-<div class="card">
-	<div class="card-body">
-		<h2>{{task.title}}</h2>
-		<p>{{task.assignment}}</p>
-		<p>{{task.description}}</p>
-		<p><small class="text-warning">{{task.deadline}}</small></p>
+<div class="detail-div">
+	<h2 class="detail-title">{{task.title}}</h2>
+	<ul class="detail-list">
+		<li>課題：{{task.assignment}}</li>
+		<li>詳細：{{task.description}}</li>
+		<li>締め切り：{{task.deadline}}</li>
+	</ul>
+	<div class="btn-position-detail">
+		<a class="normal-btn" href="{% url 'list' %}">戻る</a>
 	</div>
 </div>
-<a class="btn btn-outline-secondary mt-2" href="{% url 'list' %}" role="button">戻る</a>
 {% endblock content %}

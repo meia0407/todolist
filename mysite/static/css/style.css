@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+	font-size: 100%;
+}
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	line-height: 1.8;
+	background-color: whitesmoke;
+	color: black;
+}
+a {
+	text-decoration: none;
+}
+
+/* header部分 */
+.page-header{
+	background-color: black;
+}
+.logo{
+	font-family: 'Noto Sans', sans-serif;
+	margin-left: 20px;
+	color: white;
+}
+
+/* buttonの部分 */
+.normal-btn{
+	font-size: 110%;
+	background-color: #00a096;
+	color:  whitesmoke;
+	border-radius: 5px;
+	padding: 10px;
+}
+.normal-btn:hover{
+	background-color:  whitesmoke;
+	color: #00a096;
+	border-style: solid;
+	border-color: #00a096;
+}
+.careful-btn{
+	font-size: 110%;
+	background-color: #ff006f;
+	color:  whitesmoke;
+	border-radius: 5px;
+	padding: 10px;
+}
+.careful-btn:hover{
+	background-color:  whitesmoke;
+	color: #ff006f;
+	border-style: solid;
+	border-color: #ff006f;
+}
+
+/* todo_list.htmlの部分 */
+.list-table{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.list-th{
+	border-bottom: 3px solid #00a096;
+	font-size: 120%;
+}
+.list-th, .list-td{
+	padding: 10px;
+}
+.btn-position{
+	text-align: left;
+	padding: 10px;
+}
+
+/* todo_detail.htmlの部分*/
+.detail-div{
+	margin: 20px 40px;
+}
+.detail-title{
+	font-size: 200%;
+}
+.detail-list{
+	list-style-type: none;
+}
+.btn-position-detail{
+	text-align: right;
+	margin: 10px;
+}
+
+/* todo_form.htmlの部分 */
+.form-table{
+	height = 20vh
+}
+.form-all{
+	display: flex;
+
+}
+.form-div{
+	display: flex;
+}

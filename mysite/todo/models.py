@@ -5,9 +5,9 @@ from django.db import models
 
 class Todo(models.Model):
     title = models.CharField("授業名", max_length=30)
-    assignment = models.TextField("課題", blank=True)
-    description = models.TextField("詳細", blank=True)
     deadline = models.DateField("締め切り")
+    assignment = models.TextField("課題", blank=True, max_length=20)
+    description = models.TextField("詳細", blank=True, max_length=20)
 
     def __str__(self):
         return self.title

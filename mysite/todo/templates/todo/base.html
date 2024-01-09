@@ -1,31 +1,22 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Todo List of School</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">"
+		<title>School Calendar</title>
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-		<style>
-			body{
-				padding-top: 20px;
-				font-family: 'Noto Sans JP', sans-serif;
-			}
-		</style>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+		<link href="{% static 'css/style.css' %}" rel="stylesheet">
 	</head>
 	<body>
-		<div class="container">
-			<div class="w-75 mx-auto">
-				<div class="shadow-sm p-3 mb-5 bg-white rounded">
-					{% block header %}
-					{% endblock header %}
-				</div>
-
-				{% block content %}
-				{% endblock content %}
-			</div>
-		</div>
+		<header class="page-header">
+			<h1><a class="logo" href="{% url 'list' %}">School Calendar</a></h1>
+		</header>
+			{% block content %}
+			{% endblock content %}
 	</body>
 </html>

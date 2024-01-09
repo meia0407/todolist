@@ -1,35 +1,24 @@
 {% extends 'todo/base.html' %}
 
-{% block header %}
-<h1>Todo List of School</h1>
-<p>授業を登録しましょう！</p>
-<a class="btn btn-success" href="{% url 'create' %}">新規入力</a>
-{% endblock header %}
-
-
 {% block content %}
-<div class="shadow-sm p-3 mb-5 bg-white rounded">
-	<table class="table">
-		<thead>
-			<tr>
-				<th scope="col">授業名</th>
-				<th scope="col">課題</th>
-				<th scope="col">締め切り</th>
-			</tr>
-		</thead>
-		<tbody>
-			{% for task in tasks %}
-			<tr>
-				<td>{{task.title}}</td>
-				<td>{{task.assignment}}</td>
-				<td>{{task.deadline}}</td>
-				<td>{{task.assignment}}</td>
-				<td><a href="{% url 'detail' task.pk %}">詳細</a></td>
-				<td><a href="{% url 'update' task.pk %}">編集</a></td>
-				<td><a href="{% url 'delete' task.pk %}">削除</a></td>
-			</tr>
-			{% endfor %}
-		</tbody>
-	</table>
+<table class="list-table">
+	<tr class="list-tr">
+		<th class="list-th">授業名</th>	
+		<th class="list-th">課題</th>
+		<th class="list-th">締め切り</th>
+	</tr>
+	{% for task in tasks %}
+		<tr class="list-tr">
+			<td class="list-td">{{task.title}}</td>
+			<td class="list-td">{{task.assignment}}</td>
+			<td class="list-td">{{task.deadline}}</td>
+			<td class="list-td"><a href="{% url 'detail' task.pk %}">詳細</a></td>
+			<td class="list-td"><a href="{% url 'update' task.pk %}">編集</a></td>
+			<td class="list-td"><a href="{% url 'delete' task.pk %}">削除</a></td>
+		</tr>
+	{% endfor %}
+</table>
+<div class="btn-position">
+	<a class="normal-btn" href="{% url 'create' %}">新規入力</a>
 </div>
 {% endblock content %}

@@ -9,14 +9,16 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+		<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
 		<link href="{% static 'css/style.css' %}" rel="stylesheet">
 	</head>
 	<body>
-		<header class="page-header">
-			<h1><a class="logo" href="{% url 'list' %}">School Calendar</a></h1>
-		</header>
-			{% block content %}
-			{% endblock content %}
+		<nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+			<div class="container-fluid">
+				<h1><a class="navbar-brand" href="{% url 'list' %}">School Calendar</a></h1>
+			</div>
+		</nav>
+		{% block content %}
+		{% endblock content %}
 	</body>
 </html>

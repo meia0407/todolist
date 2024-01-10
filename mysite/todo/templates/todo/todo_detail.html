@@ -1,15 +1,15 @@
 {% extends 'todo/base.html' %}
 
 {% block content %}
-<div class="detail-div">
-	<h2 class="detail-title">{{task.title}}</h2>
-	<ul class="detail-list">
-		<li>課題：{{task.assignment}}</li>
-		<li>詳細：{{task.description}}</li>
-		<li>締め切り：{{task.deadline}}</li>
-	</ul>
-	<div class="btn-position-detail">
-		<a class="normal-btn" href="{% url 'list' %}">戻る</a>
+<div class="box">
+	<h2>{{task.title}}</h2>
+	<div class="list-position">
+		<ul class="list-group">
+			<li>締め切り：{{task.deadline}}</li>
+			<li>課題：{{task.assignment}}</li>
+			<li>詳細：{{task.description}}</li>
+		</ul>
 	</div>
+	<a class="btn" href="{% url 'list' %}">戻る</a>
 </div>
 {% endblock content %}

@@ -3,11 +3,12 @@
 {% block content %}
 <form action="" method="POST">
 	{% csrf_token %}
-	<table class="form-table">
+	<table class="table" id="form-table">
 		{{form.as_table}}
 	</table>
-	<a href="{% url 'list' %}">戻る</a>
-	<input type="submit" value="送信" class="careful-btn">
+	<div class="box">
+		<a href="{% url 'list' %}" class="btn">戻る</a>
+		<input type="submit" value="送信" class="btn">
 	</div>
 </form>
 {% endblock content %}

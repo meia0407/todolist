@@ -24,7 +24,6 @@ ul{
 	font-size: 100%;
 }
 
-
 /* buttonの部分 */
 a.btn{
 	color: whitesmoke;
@@ -43,24 +42,23 @@ input.btn:hover{
 	color: #ff006f;
 	background-color: whitesmoke;
 	border-color: #ff006f;
-
 }
 .btn-position{
-	text-align: left;
-	padding: 10px;
+	margin: 0% 5%;	
 }
 
 /* todo_list.htmlの部分 */
 .table{
 	width: 90%;
-	margin :5%
+	margin :5%;
 }
 .table-group-divider{
 	border-top: calc(var(--bs-border-width) * 2) solid #00a096;
 }
 
-/* todo_detail.htmlの部分*/
+/* todo_detail.htmlの部分 */
 .box{
+	width: 90%;
 	margin: 5%;
 }
 .list-position{
@@ -68,4 +66,3 @@ input.btn:hover{
 }
 
 /* todo_form.htmlの部分 */
-/* todo_confirm.htmlの部分 */

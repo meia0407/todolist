@@ -63,4 +63,3 @@ https://meia0407.pythonanywhere.com/
 # 次に作りたいアプリ
 
 - [Web ページの自動スクロール機能](https://github.com/meia0407/scroll)
-- [習慣を身につけるためのアプリ](https://github.com/meia0407/continuous_recording)

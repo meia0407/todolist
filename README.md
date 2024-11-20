@@ -53,7 +53,7 @@ https://meia0407.pythonanywhere.com/
 
 ## 改善点やこれから実装する機能
 
-- 認証機能
+- [認証機能](https://github.com/meia0407/school_timetable)
 - 授業が終わったことを記録する機能
 - 登録画面・編集画面をより入力しやすい形へ変更
 - レスポンシブデザインへ切り替え
@@ -61,5 +61,5 @@ https://meia0407.pythonanywhere.com/
 
 # 次に作りたいアプリ
 
-- Web ページの自動スクロール機能
-- 習慣を身につけるためのアプリ
+- [Web ページの自動スクロール機能](https://github.com/meia0407/scroll)
+- [習慣を身につけるためのアプリ](https://github.com/meia0407/continuous_recording)
